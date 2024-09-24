@@ -1,0 +1,195 @@
+h2
+{
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+  color: rgb(95, 3, 180);
+   }
+
+.card {
+    width: 100%;
+  }
+.card-body {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+.card p {
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+.icons-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+.icon-git{
+    color: rgb(138, 43, 226);
+    font-size: 1.7rem;
+  }
+
+
+.icon{
+    color: rgb(0, 0, 0);
+    font-size: 1rem; 
+} 
+
+.top-margin
+  {
+    
+    margin-top: 7%;
+  }
+
+.img-fluid {
+    width: auto;
+   }
+
+  
+.pulse {
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    animation: pulse 3s infinite; 
+  }
+
+  
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Assicurati che sia sopra ad altri elementi */
+  }
+  
+.modal-content {
+    position: relative;
+    padding: 7px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    width: 80%; /* Puoi regolare la larghezza */
+    max-width: 90%;
+    display: flex; /* Attiva il flexbox */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center; /* Centra verticalmente il contenuto */
+  }
+  
+
+.modal-video {
+    width: auto; /* Assicura che il video occupi tutta la larghezza disponibile */
+    height: auto;
+    max-width: 100%; /* Limita la larghezza massima */
+    max-height: 100%; /* Limita l'altezza massima */
+  }
+
+  
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+    border-bottom-left-radius: 20%; 
+  }
+  
+.close-button:hover {
+    color:  rgb(95, 3, 180);
+  }
+  
+.close-button:focus {
+    outline: none;
+  }
+  
+
+
+
+  
+@media (max-width: 1000px) and (orientation: landscape) {
+  .modal-overlay {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .modal-content {
+    max-width: 65%; /* Regola la larghezza */
+   
+  }
+  .modal-video
+  {
+    max-width: 100%; /* Regola la larghezza */
+   
+  }
+}
+
+@media (max-width: 991px) {
+  .card-body .img-fluid {
+    margin-bottom: 1rem; 
+  }
+  .card-body .d-flex {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+    .card-body .d-flex {
+      flex-direction: column;
+    }
+    .icons-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+     .icon-git
+     {
+      margin-top: 20px;
+     }
+    .nascondi
+    {
+      display: none;
+    }
+    .card-body .img-fluid {
+      margin-bottom: 1rem; 
+    }
+  .img-fluid {
+   width: 90%;
+  }
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse:hover {
+  opacity: 0.9; 
+}

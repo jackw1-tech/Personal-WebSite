@@ -1,0 +1,28 @@
+.styled-navbar {
+    background-color: #000000;
+    padding: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    border: 2px solid white;
+    margin-top: 2%;
+
+  }
+  
+  .nav-item {
+    padding: 10px; 
+    border-radius: 45%;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+  }
+  
+  .nav-item.selected {
+    background-color: #6610f2;
+    border: 2px solid white;
+    margin: 3px;
+  }
+  
